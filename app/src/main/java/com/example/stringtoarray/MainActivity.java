@@ -27,11 +27,14 @@ public class MainActivity extends AppCompatActivity {
 
 
        String firstChar = ""+array[2];
+        String secondChar = ""+array[3];
 
         int myNum = 0;
-        myNum = Integer.parseInt(firstChar);
+        myNum = Integer.parseInt(firstChar)*10;
+        int secNum = 0;
+        secNum = Integer.parseInt(secondChar)+myNum;
 
-        textView.setText(test+"\n"+myNum*10);
+        textView.setText(test+"\n"+secNum);
 
 
     }
